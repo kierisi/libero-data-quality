@@ -1,0 +1,23 @@
+arm,task_id,task_name,object,successes,episodes
+clean,all,all,all,167,200
+corrupted,all,all,all,94,200
+clean,0,pick up the alphabet soup and place it in the basket,alphabet soup,15,20
+clean,1,pick up the cream cheese and place it in the basket,cream cheese,16,20
+clean,2,pick up the salad dressing and place it in the basket,salad dressing,20,20
+clean,3,pick up the bbq sauce and place it in the basket,bbq sauce,14,20
+clean,4,pick up the ketchup and place it in the basket,ketchup,19,20
+clean,5,pick up the tomato sauce and place it in the basket,tomato sauce,12,20
+clean,6,pick up the butter and place it in the basket,butter,19,20
+clean,7,pick up the milk and place it in the basket,milk,14,20
+clean,8,pick up the chocolate pudding and place it in the basket,chocolate pudding,18,20
+clean,9,pick up the orange juice and place it in the basket,orange juice,20,20
+corrupted,0,pick up the alphabet soup and place it in the basket,alphabet soup,16,20
+corrupted,1,pick up the cream cheese and place it in the basket,cream cheese,5,20
+corrupted,2,pick up the salad dressing and place it in the basket,salad dressing,10,20
+corrupted,3,pick up the bbq sauce and place it in the basket,bbq sauce,9,20
+corrupted,4,pick up the ketchup and place it in the basket,ketchup,9,20
+corrupted,5,pick up the tomato sauce and place it in the basket,tomato sauce,3,20
+corrupted,6,pick up the butter and place it in the basket,butter,16,20
+corrupted,7,pick up the milk and place it in the basket,milk,5,20
+corrupted,8,pick up the chocolate pudding and place it in the basket,chocolate pudding,16,20
+corrupted,9,pick up the orange juice and place it in the basket,orange juice,5,20

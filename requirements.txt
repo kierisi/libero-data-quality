@@ -1,0 +1,15 @@
+# Environment used for every run (Python 3.12.16), from the job install logs.
+# Install with: uv pip install -r requirements.txt   (or: pip install "lerobot[smolvla,libero]==0.6.1")
+# LIBERO needs Linux. Building egl-probe needs build-essential and cmake, plus CMAKE_POLICY_VERSION_MINIMUM=3.5.
+lerobot[smolvla,libero]==0.6.1
+torch==2.11.0
+torchvision==0.26.0
+torchcodec==0.11.1
+transformers==5.5.4
+huggingface-hub==1.33.0
+hf-libero==0.1.4
+mujoco==3.8.1
+robosuite==1.4.0
+av==15.1.0
+datasets==4.8.5
+numpy==2.2.6

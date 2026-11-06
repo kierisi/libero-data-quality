@@ -1,0 +1,21 @@
+{
+  "experiment": "SmolVLA fine-tuned on LIBERO-Object, clean vs corrupted training data",
+  "date": "2026-11-05",
+  "policy": "lerobot/smolvla_base",
+  "training": {"steps": 10000, "batch_size": 64, "seed": 1000, "rename_map": {"observation.images.image": "observation.images.camera1", "observation.images.image2": "observation.images.camera2"}, "empty_cameras": 1},
+  "evaluation": {"suite": "libero_object", "episodes_per_task": 20, "batch_size": 20, "init_states": true, "seed": 0, "n_action_steps": 10, "renderer": "osmesa"},
+  "datasets": {
+    "clean": {"repo": "kierisi/libero_object_clean", "revision": "0e40d233246fe35ddab8105e12a1d0ba791a4b65", "episodes_trained": 454},
+    "corrupted": {"repo": "kierisi/libero_object_corrupted", "revision": "8484425cacd23526550994f340dba26665b08329", "episodes_trained": 453, "note": "A stale meta/info.json (453 episodes, 66,832 frames) made LeRobot 0.6.1 skip the last episode (an untouched 152-frame ketchup demo). Fixed on the Hub afterwards."}
+  },
+  "corruptions": {"instruction_swap": 90, "camera_swap": 70, "gripper_flip": 43, "untouched": 251, "seed": 51},
+  "results": {
+    "clean": {"successes": 167, "episodes": 200, "success_rate": 0.835, "wilson_95_ci": [0.777, 0.880]},
+    "corrupted": {"successes": 94, "episodes": 200, "success_rate": 0.470, "wilson_95_ci": [0.402, 0.539]},
+    "gap_points": 36.5,
+    "two_proportion_z": 7.67,
+    "p_value": "< 0.0001"
+  },
+  "per_task_csv": "per_task.csv",
+  "caveats": ["One training seed and one evaluation seed per arm", "Simulation only", "Both arms used the same re-encoded copies"]
+}
